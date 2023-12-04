@@ -1,12 +1,12 @@
 <div class="container mt-5">
     <h1 class="text-center mb-4">Zomato Items</h1>
     <div class="row row-cols-1 row-cols-md-5 g-4">
-        <div class="col">
-            <a href="restaurents.html">
-                <div class="card">
-                    <img src="" class="card-img-top" alt="Pav Bhaji">
+        <div class="col" *ngFor="let category of categoryList.slice(0,3)" (click)="navigate(category.categoryId)">
+            <a>
+                <div class="card" >
+                    <img [src]="category.photoUrl" class="card-img-top" alt="Pav Bhaji">
                     <div class="card-body">
-                        <h5 class="card-title">Pav Bhaji</h5>
+                        <h5 class="card-title">{{category.categoryName}}</h5>
                     </div>
                 </div>
             </a>

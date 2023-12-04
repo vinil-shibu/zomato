@@ -11,6 +11,8 @@ a{
 .card{
     border: none;
     transition: transform 0.2s;
+    min-height: 180px;
+    margin-bottom: 30px;
 }
 
 .card-title{
