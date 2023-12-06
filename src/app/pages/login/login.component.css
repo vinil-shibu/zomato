@@ -1,0 +1,45 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items{
+    width: 50vh;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.9);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(6px); 
+}
+
+input,button{
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 220px;
+    margin: 10px;
+    padding: 9px;
+}
+h4{
+    margin-left: 33%;
+}
+
+button{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+button:hover{
+    transform: scale(1.03   ,1.03); 
+}
+
+.reg{
+    cursor: pointer;
+    color: blue;
+}
